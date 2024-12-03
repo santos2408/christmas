@@ -1,0 +1,44 @@
+.title1 {
+  color: white;
+  position: absolute;
+  top: 0;
+  top : 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Sour Gummy", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  /* position : relative; */
+  text-align: center;
+}
+
+.title2 {
+  color: white;
+  position: absolute;
+  bottom : 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Sour Gummy", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  /* position : relative; */
+  text-align: center;
+}
+
+.text-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+  transform: translateZ(0); /*for older browsers*/
+  will-change: transform;
+  font-size: 44px;
+}
+
+.business {
+  font-size: 24px;
+}

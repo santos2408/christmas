@@ -1,5 +1,5 @@
 body {
-  background: #171720;
+  background: #151522;
 }
 
 .frame {
@@ -14,7 +14,7 @@ body {
 .frame canvas {
   display: block;
   padding: 0;
-  background: #171720;
+  background: #151522;
 }
 
 #tree{
