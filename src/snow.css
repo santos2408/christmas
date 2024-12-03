@@ -6,12 +6,6 @@ body, html {
   
 }
 
-.color {
- width: 20%;
- height: 100%;
- float: left;
-}
-
 .sky {
   height: 100vh;
   color: #FFF;

@@ -24,3 +24,39 @@ left:50%;
 top:50%;
 transform:translate(-50%,-50%);
 }
+
+@media screen and (max-width: 620px) {
+  #tree {
+    width: 560px;  
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #tree {
+    width: 480px;  
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #tree {
+    width: 420px;  
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #tree {
+    width: 360px;  
+  }
+}
+
+@media screen and (max-width: 380px) {
+  #tree {
+    width: 320px;  
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #tree {
+    width: 280px;  
+  }
+}

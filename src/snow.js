@@ -17,7 +17,7 @@ export default function () {
     ctx.fillStyle = '#FFF';
 
     var wasActive = active;
-    active = width > 600;
+    active = width > 200;
 
     if (!wasActive && active)
       requestAnimFrame(update);
