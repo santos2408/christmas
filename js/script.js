@@ -323,5 +323,25 @@ function initTree() {
   // }
 }
 
+function setResponsiveViewBox() {
+  var svg = document.querySelector(".mainSVG");
+
+  console.log(window.innerWidth)
+
+  if (window.innerWidth <= 768) {
+    // Para dispositivos móveis (tela pequena)
+    svg.style.width = "500px"
+    // svg.setAttribute("viewBox", "100 0 300 400");  // Exemplo para mobile
+  } else {
+    // Para desktops ou telas grandes
+    // svg.setAttribute("viewBox", "200 0 400 570");  // Exemplo para desktop
+    svg.style.width = "700px"
+  }
+}
+
+// Chama a função ao carregar a página e ao redimensionar a janela
+window.addEventListener("resize", setResponsiveViewBox);
+window.addEventListener("load", setResponsiveViewBox);
+
 initSnow()
 initTree()

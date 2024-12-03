@@ -59,12 +59,6 @@ svg {
   visibility: hidden;
 }
 
-@media screen and (max-width: 500px) {
-  svg {
-    color: red;
-  }
-}
-
 /* @media screen and (max-width: 480px) {
   svg {
     width: 100px;
