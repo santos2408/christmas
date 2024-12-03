@@ -54,7 +54,7 @@ h1 {
 
 svg {
   width: 500px;
-  max-width: 800px;
+  /* max-width: 800px; */
   height: 90%;
   visibility: hidden;
 }

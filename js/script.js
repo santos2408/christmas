@@ -330,7 +330,7 @@ function setResponsiveViewBox() {
 
   if (window.innerWidth <= 768) {
     // Para dispositivos móveis (tela pequena)
-    svg.style.width = "500px"
+    svg.style.width = "800px"
     // svg.setAttribute("viewBox", "100 0 300 400");  // Exemplo para mobile
   } else {
     // Para desktops ou telas grandes
