@@ -326,9 +326,9 @@ function initTree() {
 function setResponsiveViewBox() {
   var svg = document.querySelector(".mainSVG");
 
-  console.log(window.innerWidth)
+  console.log(window.screen.width)
 
-  if (window.innerWidth <= 768) {
+  if (window.screen.width <= 768) {
     // Para dispositivos móveis (tela pequena)
     svg.style.width = "800px"
     // svg.setAttribute("viewBox", "100 0 300 400");  // Exemplo para mobile
