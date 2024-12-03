@@ -29,6 +29,7 @@ h1 {
   animation: fadeIn 2s forwards; /* A animação acontece em 2 segundos */
   animation-delay: 8s; /* O texto vai aparecer após 3 segundos */
   color: #fff;
+  font-size: 40px;
 }
 
 @keyframes fadeIn {
@@ -52,10 +53,23 @@ h1 {
 /* TREE */
 
 svg {
-  width: 800px;
-  /* height: 90%; */
+  width: 500px;
+  max-width: 800px;
+  height: 90%;
   visibility: hidden;
 }
+
+@media screen and (max-width: 500px) {
+  svg {
+    color: red;
+  }
+}
+
+/* @media screen and (max-width: 480px) {
+  svg {
+    width: 100px;
+  }
+} */
 
 #endMessage {
   font-family: "Dancing Script";
