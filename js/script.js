@@ -316,11 +316,11 @@ function initTree() {
   mainTl.add(starTl, 0)
   gsap.globalTimeline.timeScale(1.5);
 
-  starTl.vars.onComplete = function () {
-    gsap.to('foreignObject', {
-      opacity: 1
-    })
-  }
+  // starTl.vars.onComplete = function () {
+  //   gsap.to('foreignObject', {
+  //     opacity: 1
+  //   })
+  // }
 }
 
 initSnow()

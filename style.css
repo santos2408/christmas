@@ -15,6 +15,31 @@ html {
   overflow: hidden;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  opacity: 0; /* Começa invisível */
+  animation: fadeIn 2s forwards; /* A animação acontece em 2 segundos */
+  animation-delay: 8s; /* O texto vai aparecer após 3 segundos */
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Começa invisível */
+  }
+  to {
+    opacity: 1; /* Fica totalmente visível */
+  }
+}
+
 /* SNOW */
 .sky {
   position: absolute;
@@ -33,8 +58,8 @@ svg {
 }
 
 #endMessage {
-  font-family: mountains_of_christmasregular;
-  font-size: 2rem;
+  font-family: "Dancing Script";
+  font-size: 4rem;
   text-anchor: middle;
   text-align: center;
   fill: #ffffff;
