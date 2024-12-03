@@ -335,7 +335,7 @@ function setResponsiveViewBox() {
   } else {
     // Para desktops ou telas grandes
     // svg.setAttribute("viewBox", "200 0 400 570");  // Exemplo para desktop
-    svg.style.width = "700px"
+    svg.style.width = "500px"
   }
 }
 
