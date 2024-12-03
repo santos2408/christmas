@@ -194,6 +194,8 @@
 
 // }
 
+// import DrawSVGPlug
+
 //MorphSVGPlugin.convertToPath('polygon');
 var xmlns = "http://www.w3.org/2000/svg",
   xlinkns = "http://www.w3.org/1999/xlink",
@@ -227,7 +229,6 @@ gsap.set(sparkle, {
 })
 
 let getSVGPoints = (path) => {
-	
 	let arr = []
 	var rawPath = MotionPathPlugin.getRawPath(path)[0];
 	rawPath.forEach((el, value) => {
