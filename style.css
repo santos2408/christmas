@@ -1,17 +1,9 @@
-@font-face {
-    font-family: 'mountains_of_christmasregular';
-    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/35984/mountainsofchristmas-webfont.woff2') format('woff2'),
-         url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/35984/mountainsofchristmas-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
 body {
-  background-color:#151522;
+  background-color: #151522;
   overflow: hidden;
-    display: flex;
+  display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
 }
 
 body,
@@ -20,16 +12,33 @@ html {
   width: 100%;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
-
-svg{
-  width:90%;
-  height:90%;
-  visibility:hidden;
- 
+/* SNOW */
+.sky {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+  display: block;
 }
 
-.sparkle{
-  /* mix-blend-mode:luminosity */
+/* TREE */
+
+svg {
+  width: 90%;
+  height: 90%;
+  visibility: hidden;
+}
+
+#endMessage {
+  font-family: mountains_of_christmasregular;
+  font-size: 2rem;
+  text-anchor: middle;
+  text-align: center;
+  fill: #ffffff;
+  color: #ffffff;
+  opacity: 0;
+  letter-spacing: 1px;
 }
