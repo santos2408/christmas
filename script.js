@@ -137,7 +137,6 @@ function initTree() {
       if (value % 2) {
         arr.push(obj)
       }
-      //console.log(value)
     })
 
     return arr;
@@ -145,8 +144,6 @@ function initTree() {
   let treePath = getSVGPoints('.treePath')
 
   var treeBottomPath = getSVGPoints('.treeBottomPath')
-
-  //console.log(starPath.length)
   var mainTl = gsap.timeline({ delay: 2, repeat: 0 }), starTl;
 
 
@@ -326,11 +323,9 @@ function initTree() {
 function setResponsiveViewBox() {
   var svg = document.querySelector(".mainSVG");
 
-  console.log(window.screen.width)
-
   if (window.screen.width <= 768) {
     // Para dispositivos móveis (tela pequena)
-    svg.style.width = "800px"
+    svg.style.width = "400px"
     // svg.setAttribute("viewBox", "100 0 300 400");  // Exemplo para mobile
   } else {
     // Para desktops ou telas grandes
