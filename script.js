@@ -334,9 +334,20 @@ function setResponsiveViewBox() {
   }
 }
 
-// Chama a função ao carregar a página e ao redimensionar a janela
-window.addEventListener("resize", setResponsiveViewBox);
-window.addEventListener("load", setResponsiveViewBox);
+function initAudio() {
+  const audio = document.querySelector("audio");
+  audio.volume = 1;
+  audio.muted = false;
+  // audio.play()
+}
 
 initSnow()
 initTree()
+
+// Chama a função ao carregar a página e ao redimensionar a janela
+window.addEventListener("resize", setResponsiveViewBox);
+window.addEventListener("load", setResponsiveViewBox);
+window.addEventListener("click", initAudio)
+
+const button = document.querySelector("button")
+
