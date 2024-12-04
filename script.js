@@ -144,7 +144,7 @@ function initTree() {
   let treePath = getSVGPoints('.treePath')
 
   var treeBottomPath = getSVGPoints('.treeBottomPath')
-  var mainTl = gsap.timeline({ delay: 2, repeat: 0 }), starTl;
+  var mainTl = gsap.timeline({ delay: 1, repeat: 0 }), starTl;
 
 
   //tl.seek(100).timeScale(1.82)
@@ -338,16 +338,29 @@ function initAudio() {
   const audio = document.querySelector("audio");
   audio.volume = 1;
   audio.muted = false;
-  // audio.play()
+  audio.play()
+  console.log("Clicou!")
+}
+
+let activeTree = false;
+
+function initAnimationTree() {
+  const containerTree = document.querySelector(".container-tree");
+  const gift = document.querySelector(".gift");
+
+  containerTree.style.display = "block";
+  gift.style.display = "none";
+
+  if (!activeTree) {
+    initTree();
+    initAudio();
+    activeTree = true;
+  }
 }
 
 initSnow()
-initTree()
 
-// Chama a função ao carregar a página e ao redimensionar a janela
 window.addEventListener("resize", setResponsiveViewBox);
 window.addEventListener("load", setResponsiveViewBox);
-window.addEventListener("click", initAudio)
-
-const button = document.querySelector("button")
+window.addEventListener("click", initAnimationTree);
 
