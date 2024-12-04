@@ -336,7 +336,7 @@ function setResponsiveViewBox() {
 
 function initAudio() {
   const audio = document.querySelector("audio");
-  audio.volume = 1;
+  audio.volume = 0.5;
   audio.muted = false;
   audio.play()
   console.log("Feliz Natal e boas festas!")
