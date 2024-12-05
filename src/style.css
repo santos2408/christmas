@@ -62,7 +62,7 @@ body {
   -webkit-animation: fadeIn 2s forwards;
   animation: fadeIn 2s forwards;
   -webkit-animation-delay: 10s;
-  animation-delay: 10s;
+  animation-delay: 6s;
 }
 
 @media screen and (min-width: 1000px) {

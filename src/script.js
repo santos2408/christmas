@@ -144,7 +144,7 @@ function initTree() {
   let treePath = getSVGPoints('.treePath')
 
   var treeBottomPath = getSVGPoints('.treeBottomPath')
-  var mainTl = gsap.timeline({ delay: 1, repeat: 0 }), starTl;
+  var mainTl = gsap.timeline({ delay: 1, repeat: -1, repeatDelay: 3 }), starTl;
 
 
   //tl.seek(100).timeScale(1.82)
