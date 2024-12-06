@@ -323,14 +323,20 @@ function initTree() {
 function setResponsiveViewBox() {
   var svg = document.querySelector(".mainSVG");
 
-  if (window.screen.width <= 768) {
+  console.log(window.screen.width)
+
+  if (window.screen.width <= 320) {
+    // Para dispositivos móveis (tela pequena)
+    svg.style.width = "220px"
+    // svg.setAttribute("viewBox", "100 0 300 400");  // Exemplo para mobile
+  } else if (window.screen.width > 320 && window.screen.width <= 768) {
     // Para dispositivos móveis (tela pequena)
     svg.style.width = "400px"
     // svg.setAttribute("viewBox", "100 0 300 400");  // Exemplo para mobile
   } else {
     // Para desktops ou telas grandes
     // svg.setAttribute("viewBox", "200 0 400 570");  // Exemplo para desktop
-    svg.style.width = "500px"
+    svg.style.width = "420px"
   }
 }
 
